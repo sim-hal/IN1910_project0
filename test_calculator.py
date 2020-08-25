@@ -7,3 +7,9 @@ def test_add():
     expected = 0.3
     actual = calculator.add(0.2, 0.1)
     assert abs(actual - expected) < epsilon
+
+
+def test_add_strings():
+    expected = "hello world"
+    actual = calculator.add("hello ", "world")
+    assert actual == expected

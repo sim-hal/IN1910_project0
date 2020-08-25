@@ -4,4 +4,6 @@ epsilon = 1e-10
 
 
 def test_add():
-    assert abs(calculator.add(0.2, 0.1) - 0.3) < epsilon
+    expected = 0.3
+    actual = calculator.add(0.2, 0.1)
+    assert abs(actual - expected) < epsilon

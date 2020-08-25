@@ -1,5 +1,6 @@
 import calculator
 from math import pi
+import pytest
 
 epsilon = 1e-10
 
@@ -44,3 +45,13 @@ def test_subtract_exercise_4():
     expected = 5
     actual = calculator.subtract_exercise_4(7, 2)
     assert abs(expected - actual) < epsilon
+
+
+def test_add_raises_TypeError_exercise_5():
+    with pytest.raises(TypeError):
+        calculator.add_exercise_1(4, "Hei verden")
+
+
+def test_divide_raises_ZeroDivisionError_exercise_5():
+    with pytest.raises(ZeroDivisionError):
+        calculator.divide_exercise_4(4, 0)

@@ -3,6 +3,8 @@ def add_exercise_1(x, y):
 
 
 def factorial_exercise_4(n):
+    if n == 0:
+        return 1
     ans = 1
     ints_to_n = range(1, n + 1)
     for i in ints_to_n:

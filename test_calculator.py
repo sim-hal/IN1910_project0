@@ -24,7 +24,7 @@ def test_factorial():
 
 def test_sin():
     expected = 1
-    actual = calculator.sin(pi/2)
+    actual = calculator.sin(pi/2, 10)
     assert abs(expected - actual) < epsilon
 
 

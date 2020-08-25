@@ -1,8 +1,8 @@
-def add(x, y):
+def add_exercise_1(x, y):
     return x + y
 
 
-def factorial(n):
+def factorial_exercise_4(n):
     ans = 1
     ints_to_n = range(1, n + 1)
     for i in ints_to_n:
@@ -10,20 +10,20 @@ def factorial(n):
     return ans
 
 
-def sin(x, n):
+def sin_exercise_4(x, n):
     ans = 0
     for i in range(n + 1):
-        ans += ((-1) ** i * x ** (2*i + 1))/factorial(2*i + 1)
+        ans += ((-1) ** i * x ** (2*i + 1))/factorial_exercise_4(2*i + 1)
     return ans
 
 
-def divide(x, y):
+def divide_exercise_4(x, y):
     return x/y
 
 
-def multiply(x, y):
+def multiply_exercise_4(x, y):
     return x * y
 
 
-def subtract(x, y):
+def subtract_exercise_4(x, y):
     return x - y
